@@ -62,7 +62,7 @@ a:hover {
 .bg-t-edge,
 .bg-b-edge,
 .bg-tl-edge,
-.bg-bl-edge,
+.bg-bl-edge,ture
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
@@ -90,10 +90,10 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
+/*.texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
+}*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -123,7 +123,7 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
+.d-bloc a,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -140,7 +140,7 @@ a:hover {
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
+.d-bloc a:hover,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -221,7 +221,7 @@ a:hover {
 .l-bloc .navbar a,
 .l-bloc .navbar-brand,
 .l-bloc a .icon-sm,
-.l-bloc a .icon-md,
+.l-bloc a,
 .l-bloc a .icon-lg,
 .l-bloc a .icon-xl,
 .l-bloc h1 a,
@@ -239,7 +239,7 @@ a:hover {
 .l-bloc .navbar a:hover,
 .l-bloc .navbar-brand:hover,
 .l-bloc a:hover .icon-sm,
-.l-bloc a:hover .icon-md,
+.l-bloc a:hover,
 .l-bloc a:hover .icon-lg,
 .l-bloc a:hover .icon-xl,
 .l-bloc h1 a:hover,
@@ -284,12 +284,14 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 1.8em;
+    line-height: 1.5em;
 }
 
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -335,6 +337,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    border-bottom: 1px solid rgb(0,0,0);
 }
 
 .navbar-toggle {
@@ -477,6 +480,10 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    color: rgba(0,0,0,0.7);
+}
+.icon-md:hover {
+    color: rgba(0,0,0,0.8)
 }
 
 .icon-lg {
@@ -645,7 +652,6 @@ h3,
 h4,
 h5,
 h6,
-p,
 label,
 .btn,
 a {
@@ -656,6 +662,10 @@ a {
 
 .container {
     max-width: 1000px;
+}
+.container5 {
+    display: flex;
+    justify-content: center;
 }
 
 .hero-bloc-text {
@@ -691,7 +701,6 @@ p {
 }
 
 .cta-hero {
-    margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
@@ -753,7 +762,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -780,12 +789,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: rgb(0,0,0)!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #CE8562!important;
+    color: rgb(0,0,0)!important;
 }
 
 .ltc-white {
@@ -813,9 +822,9 @@ h4 {
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
+/*.bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}
+}*/
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
@@ -851,6 +860,10 @@ h4 {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
+    }
+    .med-width-whitespace {
+    display: flex;
+    flex-direction: column;
     }
 }
 
@@ -1040,3 +1053,59 @@ h4 {
         text-align: center;
     }
 }
+.fond {
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    width: 450px;
+}
+.titre__portfolio {
+    font-size: 1.5em;
+    text-transform: none;
+}
+.text-center {
+    font-size: 1em;
+}
+.text-center-bloc2
+{
+    text-align: justify;
+    font-size: 1em;
+}
+.text-center-bloc5
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+.citation-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+}
+
+.citation-subtitle {
+    font-size: 1.2em;
+}
+#bloc-8 {
+    padding: 20px;
+}
+.text-footer {
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.cta-info-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cta-info {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
