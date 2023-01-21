@@ -1,0 +1,13 @@
+.citation-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+}
+
+.citation-subtitle {
+    font-size: 1.2em;
+}
+.tc-orange {
+    color: #B85C31!important;
+}
