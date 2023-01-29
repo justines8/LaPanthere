@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="robots" content="index, follow">
@@ -8,26 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style2.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-    <script src="https://kit.fontawesome.com/01e9920d62.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 	
 	<title>Contactez La Panthère</title>
-
-<!-- Analytics -->
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVYMRMVN35"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SVYMRMVN35');
-</script> 
-<!-- Analytics END -->
     
 </head>
 <body>
@@ -39,7 +25,7 @@
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="atlanta web design logo" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence de Web Design La Panthère" height="40"></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
@@ -80,24 +66,24 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate>
 					<div class="form-group">
 						<label>
 							Nom
 						</label>
-						<input id="name" class="form-control" placeholder="Indiquez votre nom" required />
+						<input id="name" class="form-control" placeholder="Indiquez votre nom" required>
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" placeholder="indiquez votre adresse mail" required />
+						<input id="email" class="form-control" type="email" placeholder="indiquez votre adresse mail" required>
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" placeholder="Publicité, presse, bouche-à-oreille..." required id="input_504" />
+						<input class="form-control" placeholder="Publicité, presse, bouche-à-oreille..." required id="input_504">
 					</div>
 					<div class="form-group">
 						<label>
@@ -110,8 +96,8 @@
 				</form>
 			</div>
 			<div class="col-sm-6">
-				<p>
-					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+				<p class="contact">
+					<i class="fa-solid fa-envelope iconcontact"></i>contact@agencelapanthere.com<br><i class="fa-solid fa-location-dot iconcontact"></i>2 place Sathonay 69001 Lyon<br><i class="fa-solid fa-clock iconcontact"></i>Ouvert de 9h à 18h, du lundi au vendredi<br>
 				</p>
 			</div>
 		</div>
@@ -162,7 +148,23 @@
 
 </div>
 <!-- Principal conteneur END -->
-    
+<script src="https://kit.fontawesome.com/01e9920d62.js" crossorigin="anonymous"></script>
+<script src="./js/jquery-2.1.0.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/blocs.min.js"></script>
+<script src="./js/jquery.touchSwipe.min.js" defer></script>
+<script src="./js/gmaps.min.js"></script>
+<!-- Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVYMRMVN35"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SVYMRMVN35');
+</script> 
+<!-- Analytics END -->
 
 </body>
 </html>

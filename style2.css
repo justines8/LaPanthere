@@ -11,3 +11,11 @@
 .tc-orange {
     color: #D07449!important;
 }
+.iconcontact {
+    font-size: 1.2em;
+    padding-right: 10px;
+}
+.contact {
+    font-size: 1em;
+    line-height: 2em;
+}
